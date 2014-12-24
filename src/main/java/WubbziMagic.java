@@ -5,18 +5,14 @@ public class WubbziMagic {
 
         // Create an apple Fruit
         Fruit apple = new Fruit();
-
         apple.setColor("green");
         apple.setType("apple");
         apple.setSeedless(false);
         apple.setSweet(false);
         apple.setTexture("Smooth");
 
-
-
         // Create a cherry Fruit
         Fruit cherry = new Fruit();
-
         cherry.setColor("red");
         cherry.setType("cherry");
         cherry.setSeedless(true);
@@ -26,7 +22,6 @@ public class WubbziMagic {
 
         //Create a Lime Fruit
         Fruit lime = new Fruit();
-
         lime.setColor("green");
         lime.setType("lime");
         lime.setSeedless(true);
@@ -35,7 +30,6 @@ public class WubbziMagic {
 
         //Create a Plum Fruit
         Fruit plum = new Fruit();
-
         plum.setColor("purple");
         plum.setType("plum");
         plum.setSeedless(false);
@@ -45,7 +39,6 @@ public class WubbziMagic {
 
         //Create a Kiwi Fruit
         Fruit kiwi = new Fruit();
-
         kiwi.setColor("brown");
         kiwi.setType("Kiwi");
         kiwi.setSeedless(false);
@@ -60,12 +53,12 @@ public class WubbziMagic {
         printTheFruit(plum);
         printTheFruit(kiwi);
 
-
     }
 
     // Print out the Fruit object which is passed in by its name
     public static void printTheFruit(Fruit fruit) {
-        System.out.println("Have a " + fruit.getColor() + " " + fruit.getType() + " " + seedlessString(fruit.getSeedless()) + " " + sweetString(fruit.getSweet()) + " Such a " + fruit.getTexture() + " surface");
+        System.out.println("Have a " + fruit.getColor() + " " + fruit.getType() + " " + seedlessString(fruit.getSeedless())
+                + " " + sweetString(fruit.getSweet()) + " Such a " + fruit.getTexture() + " surface");
     }
 
     // Return a string depending on whether the fruit is seedless or not
@@ -77,7 +70,6 @@ public class WubbziMagic {
             return "with seeds";
         }
     }
-
 
     // Return a string that depends on whether the fruit is sweet or not
     public static String sweetString(boolean sweet) {

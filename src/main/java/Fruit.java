@@ -21,9 +21,12 @@ public class Fruit {
         this.seedless = seedless;
     }
 
-    public void setSweet(Boolean sweet) { this.sweet = sweet; }
+    public void setSweet(Boolean sweet) {
+        this.sweet = sweet;
+    }
 
-    public void setTexture(String texture) {
+    public void setTexture(String texture)
+    {
         this.texture = texture;
     }
 
@@ -37,9 +40,13 @@ public class Fruit {
         return type;
     }
 
-    public Boolean getSeedless() { return seedless; }
+    public Boolean getSeedless() {
+        return seedless;
+    }
 
-    public Boolean getSweet() { return sweet; }
+    public Boolean getSweet() {
+        return sweet;
+    }
 
     public String getTexture() {
         return texture;
