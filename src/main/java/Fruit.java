@@ -22,6 +22,7 @@ public class Fruit {
 
     public void setSweet(Boolean sweet) { this.sweet = sweet; }
 
+
     // Accessible from outside of class - use these to set Fruit's variables
     public String getColor() {
         return color;
@@ -34,5 +35,6 @@ public class Fruit {
     public Boolean getSeedless() { return seedless; }
 
     public Boolean getSweet() { return sweet; }
+
 
 }

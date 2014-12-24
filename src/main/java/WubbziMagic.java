@@ -12,6 +12,7 @@ public class WubbziMagic {
         apple.setSweet(false);
 
 
+
         // Create a cherry Fruit
         Fruit cherry = new Fruit();
 
@@ -19,6 +20,7 @@ public class WubbziMagic {
         cherry.setType("cherry");
         cherry.setSeedless(true);
         cherry.setSweet(true);
+
 
 
         //Create a Lime Fruit
@@ -35,10 +37,16 @@ public class WubbziMagic {
         plum.setColor("purple");
         plum.setType("plum");
         plum.setSeedless(false);
-        plum.setSweet(true);
+        plum.setSweet(false);
 
 
+        //Create a Kiwi Fruit
+        Fruit kiwi = new Fruit();
 
+        kiwi.setColor("brown");
+        kiwi.setType("Kiwi");
+        kiwi.setSeedless(false);
+        kiwi.setSweet(true);
 
 
         // Print out the apple and cherry (no list etc, ezmode)
@@ -46,6 +54,7 @@ public class WubbziMagic {
         printTheFruit(cherry);
         printTheFruit(lime);
         printTheFruit(plum);
+        printTheFruit(kiwi);
 
 
     }
@@ -60,8 +69,7 @@ public class WubbziMagic {
 
         if (seedless) {
             return "with NO seeds";
-        }
-        else {
+        } else {
             return "with seeds";
         }
     }
@@ -72,9 +80,8 @@ public class WubbziMagic {
 
         if (sweet) {
             return "and a sweet flavor";
-        }
-        else {
+        } else {
             return "and a tart flavor";
         }
-    }
+   }
 }
